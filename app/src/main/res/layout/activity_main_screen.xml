@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainScreen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/textView2">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tab" />
+    </ScrollView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="LED"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/btnGreen"
+        android:id="@+id/ButtonHolder"
+        android:layout_below="@+id/textView2">
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="183dp"
+            android:layout_gravity="center_horizontal|bottom">
+
+            <Button
+                android:id="@+id/btnMultiBlink"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="MultiColor Blinker"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="183dp"
+            android:layout_gravity="left|bottom" >
+
+            <Button
+                android:id="@+id/btnRandBlink"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Random Blinker"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="183dp"
+            android:layout_gravity="right|bottom" >
+
+            <Button
+                android:id="@+id/btnBrightBlink"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Brighter Blinker"
+                android:layout_gravity="right|center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="183dp"
+            android:layout_gravity="left|center_vertical" >
+
+            <Button
+                android:id="@+id/btnBlue"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Blue LED"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="183dp"
+            android:layout_gravity="center" >
+
+            <Button
+                android:id="@+id/btnRed"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Red LED"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="183dp"
+            android:layout_gravity="right|center_vertical" >
+
+            <Button
+                android:id="@+id/btnGreen"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Green LED"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="183dp"
+            android:layout_gravity="center_horizontal|top" >
+
+            <Button
+                android:id="@+id/btnRGBBlink"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="RGB Blinker"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>
