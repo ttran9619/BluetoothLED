@@ -126,6 +126,8 @@ public class MainScreen extends ActionBarActivity {
         });
     }
 
+
+
     private BroadcastReceiver onNotice= new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -135,8 +137,20 @@ public class MainScreen extends ActionBarActivity {
             String text = intent.getStringExtra("text");
 
 
-            if (pack.equalsIgnoreCase("com.groupme.android")){
+            if (pack.equalsIgnoreCase("com.google.android.talk")){
+                talker.SendMessage("0");
+            }
+
+            if (pack.equalsIgnoreCase("com.valvesoftware.android.steam.community")){
                 talker.SendMessage("1");
+            }
+
+            if (pack.equalsIgnoreCase("com.google.android.apps.inbox")){
+                talker.SendMessage("2");
+            }
+
+            if (pack.equalsIgnoreCase("com.groupme.android")){
+                talker.SendMessage("3");
             }
 
 

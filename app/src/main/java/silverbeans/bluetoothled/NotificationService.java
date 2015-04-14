@@ -17,6 +17,7 @@ public class NotificationService extends NotificationListenerService {
     }
     @Override
     public void onNotificationPosted(StatusBarNotification sbn) {
+
         String pack = sbn.getPackageName();
         String ticker = sbn.getNotification().tickerText.toString();
         Bundle extras = sbn.getNotification().extras;
