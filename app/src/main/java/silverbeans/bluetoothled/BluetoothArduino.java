@@ -37,6 +37,9 @@ public class BluetoothArduino extends Thread {
     }
 
     public static BluetoothArduino getInstance(){
+
+
+
         return __blue == null ? new BluetoothArduino() : __blue;
     }
 
